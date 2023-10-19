@@ -1681,7 +1681,7 @@ loadEEpromSettings();
  while (1)
   {
 
-LL_IWDG_ReloadCounter(IWDG);
+	 LL_IWDG_ReloadCounter(IWDG);
 
 	  adc_counter++;
 	  if(adc_counter>10){   // for adc and telemetry

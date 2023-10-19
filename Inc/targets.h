@@ -16,12 +16,13 @@
 //#define AIKON20X20_F051
 //#define AIKONSINGLE_F051
 //#define FLYCOLOR_F051
-#define AM32REF_F051
+//define AM32REF_F051
 //#define BLPWR_F051
 //#define HVFLYCOLOR_F051
 //#define FLASHHOBBY_F051
 //#define SEQURE_G071
 //#define RHINO80A_F051
+//#define TMOTOR_G071 //use for CAN Control Board
 
 
 
@@ -32,6 +33,7 @@
 //#define OPEN_DRAIN_G071
 //#define OPEN_DRAIN_B_G071
 //define  DT120_G071
+#define DT160_64K_G071
 #endif
 
 //GLOBAL
@@ -782,20 +784,20 @@
 #define    DMA_HANDLE_TYPE_DEF     hdma_tim3_ch1
 #define    IC_DMA_IRQ_NAME         DMA1_Channel1_IRQn
 
-#define PHASE_A_GPIO_LOW          LL_GPIO_PIN_1
-#define PHASE_A_GPIO_PORT_LOW         GPIOB
-#define PHASE_A_GPIO_HIGH          LL_GPIO_PIN_10
-#define PHASE_A_GPIO_PORT_HIGH         GPIOA
+#define PHASE_A_GPIO_HIGH          LL_GPIO_PIN_1
+#define PHASE_A_GPIO_PORT_HIGH         GPIOB
+#define PHASE_A_GPIO_LOW          LL_GPIO_PIN_10
+#define PHASE_A_GPIO_PORT_LOW         GPIOA
 
-#define PHASE_B_GPIO_LOW          LL_GPIO_PIN_0
-#define PHASE_B_GPIO_PORT_LOW         GPIOB
-#define PHASE_B_GPIO_HIGH          LL_GPIO_PIN_9
-#define PHASE_B_GPIO_PORT_HIGH         GPIOA
+#define PHASE_B_GPIO_HIGH          LL_GPIO_PIN_0
+#define PHASE_B_GPIO_PORT_HIGH         GPIOB
+#define PHASE_B_GPIO_LOW          LL_GPIO_PIN_9
+#define PHASE_B_GPIO_PORT_LOW         GPIOA
 
-#define PHASE_C_GPIO_LOW          LL_GPIO_PIN_7
-#define PHASE_C_GPIO_PORT_LOW         GPIOA
-#define PHASE_C_GPIO_HIGH          LL_GPIO_PIN_8
+#define PHASE_C_GPIO_HIGH          LL_GPIO_PIN_7
 #define PHASE_C_GPIO_PORT_HIGH         GPIOA
+#define PHASE_C_GPIO_LOW          LL_GPIO_PIN_8
+#define PHASE_C_GPIO_PORT_LOW         GPIOA
 
 #define PHASE_A_COMP  LL_COMP_INPUT_MINUS_IO2  // pb7
 #define PHASE_B_COMP  LL_COMP_INPUT_MINUS_IO1  // pb3
@@ -1008,7 +1010,7 @@
 #ifdef     HARDWARE_GROUP_G0_H
 
 #define    MCU_G071
-#define    N_VARIANT
+//#define    N_VARIANT
 #define    USE_TIMER_16_CHANNEL_1
 #define    INPUT_PIN               LL_GPIO_PIN_6
 #define    INPUT_PIN_PORT              GPIOA
